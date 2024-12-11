@@ -5,7 +5,9 @@ from line_tracing import detect_road
 from obstacle_detection import detection_and_crop_obj, green_obj, red_obj, yellow_obj
 import depthai as dai
 import cv2
-
+'''
+정지선 인식 코드
+'''
 # serial port 
 py_serial = open_serial_port()
 

@@ -1,6 +1,8 @@
 import serial
 import time
-
+'''
+아두이노 젯슨 시리얼 통신 파일
+'''
 def open_serial_port(port='/dev/ttyACM0', baudrate=9600, timeout=1):
     """
     시리얼 포트를 열고 초기화합니다.

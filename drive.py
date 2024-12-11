@@ -1,8 +1,10 @@
 import numpy as np
-
+'''
+주행 폴더
 # 중앙선 각도를 이용해서 각도 설정
 # 중앙선 각도가 오른쪽이 음수, 왼쪽이 양수
 # 서보 모터
+'''
 
 # 값 정규화 함수
 def rescale(value, in_min=-0.3, in_max=0.3, out_min=40, out_max=140):

@@ -2,6 +2,9 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+차선 주행 파일
+'''
 
 # 관심 영역 지정 함수
 def region_of_interest(img, vertices):
@@ -140,11 +143,6 @@ def detect_road(frame, prev_lane_gap):
         fit_center = np.polyfit(y_values, center_x_values, 1)  # 1차 직선 피팅
         center_slope = fit_center[0]  # 기울기
         # print(f"Center Line 기울기: {center_slope}")
-        
-        
-        
-    
-    
     return result, center_slope, prev_lane_gap, stop_line
 
 # 동영상 넣어서 확인

@@ -3,6 +3,9 @@ from camera_class import Yolo_camera, Depth_camera, check_device
 import cv2
 import depthai as dai
 import numpy as np
+'''
+장애물 인식 파일
+'''
 
 labelMap = [
             "person",         "bicycle",    "car",           "motorbike",     "aeroplane",   "bus",           "train",
@@ -26,7 +29,7 @@ def frameNorm(frame, bbox):
         return (np.clip(np.array(bbox), 0, 1) * normVals).astype(int)
        
 
-# 하나의 물체만 특정해서 뎁스 이미지에 영상을 그리고 
+# 하나의 물체만 특정해서 뎁스 이미지에 영상을 그림
 # 물체의 이미지를 따로 분리
 def detection_and_crop_obj(img, detections, obj):
     color = (255, 0, 0)
@@ -69,7 +72,7 @@ def detection_and_crop_obj(img, detections, obj):
     
     return img, cropped_img
 
-# 뎁스 이미지를 색상 별로 구분하는 테스트 코드들
+# 뎁스를 색상 별로 구분하는 테스트 코드들
 # red, yellow, green detection func
 def red_detection(img):
     # BGR을 HSV로 변환

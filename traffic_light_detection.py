@@ -4,7 +4,9 @@ import cv2
 import depthai as dai
 import numpy as np
 from obstacle_detection import detection_and_crop_obj
-
+'''
+신호등 인식 파일
+'''
 labelMap = [
             "person",         "bicycle",    "car",           "motorbike",     "aeroplane",   "bus",           "train",
             "truck",          "boat",       "traffic light", "fire hydrant",  "stop sign",   "parking meter", "bench",

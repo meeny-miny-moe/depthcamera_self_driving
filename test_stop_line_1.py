@@ -6,6 +6,10 @@ from traffic_light_detection import displayFrame_traffic_light, detect_green_lig
 import depthai as dai
 import cv2
 
+'''
+정지선 인식 코드
+'''
+
 # serial port 
 py_serial = open_serial_port()
 

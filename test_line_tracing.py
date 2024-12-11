@@ -1,4 +1,4 @@
-# 라인 트레이싱 테스트
+# 라인 트레이싱 테스트 코드 파일
 
 from serial_arduino import open_serial_port, communicate_with_arduino
 from drive import set_direction, set_speed
@@ -31,7 +31,7 @@ depth_camera.set2_camera(device)
 check_color = 0
 count = 0    
     
-# 뽈록카메라
+# 볼록카메라
 # cap = cv2.VideoCapture(0)
 
 # 중앙선 탐지 성공 시 저장한 값
