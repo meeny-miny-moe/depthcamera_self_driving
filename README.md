@@ -1,27 +1,38 @@
 Depth 카메라 기반 자율주행 자동차
 ==================================
 ▪ 프로젝트
+
 프로젝트명: DEPTH CAMERA를 이용한 자율주행 RC카
+
 기간: 2024.03.11 – 2024.12.03
+
 참여 인원: 3
+
 
 개요
 기존 RC카 기반 자율주행 실습에서 단순한 하드코딩 방식이나 정밀도 낮은 센서를 사용하는 것에 한계를 느껴, 보다 실제 자율주행 차량에 가까운 구조를 구현하고자 본 프로젝트를 기획하였습니다. Jetson Nano의 연산 성능과 OAK-D Pro의 Depth 인식 능력을 활용하여 차선 추적, 신호등 인식, 장애물 회피 기능을 통합적으로 구현하였고, 아두이노를 통해 차량 제어를 정밀하게 수행하였습니다. 이 구조는 향후 라이다 연동, 실내외 자율배송 시스템, 스마트시티 모빌리티 기술로의 확장이 가능합니다.
 
 기술 환경
+
 - 기술 환경
+
 ● 운영체제: Ubuntu 20.04 (Jetson Nano)
+
 ● 개발 언어: Python (OpenCV, DepthAI, YOLOv8)
+
 ● 하드웨어: 
   - Jetson Nano (메인 연산 장치)
   - Arduino (차량 제어)
   - OAK-D Pro Depth 카메라 (RGB + Depth 정보)
   - RC Monster Truck (3D 프린터를 이용해 고정 부품 제작)
+
 ● 영상 처리:
   - Gaussian Blur, Canny Edge Detection, Hough Line Transform
   - Hough Circle Transform (원형 신호 감지)
   - YOLOv8 (객체 인식, 신호등/장애물 검출)
+
 ● 통신: Jetson ↔ Arduino 간 USB 직렬 통신
+
 ● 개발 방식: VSCode Remote SSH 연결을 통한 원격 개발
 
 담당 역할
