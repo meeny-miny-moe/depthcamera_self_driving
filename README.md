@@ -15,8 +15,6 @@ Depth 카메라 기반 자율주행 자동차
 
 기술 환경
 
-- 기술 환경
-
 ● 운영체제: Ubuntu 20.04 (Jetson Nano)
 
 ● 개발 언어: Python (OpenCV, DepthAI, YOLOv8)
